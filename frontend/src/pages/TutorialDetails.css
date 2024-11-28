@@ -1,0 +1,58 @@
+/* Conteneur principal */
+.details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+/* Card principale */
+.details-card {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  color: #333;
+}
+
+/* Titre de la formation */
+.details-card h1 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.details-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Boutons */
+.details-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.details-buttons button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.details-buttons button:hover {
+  background-color: #0056b3;
+}

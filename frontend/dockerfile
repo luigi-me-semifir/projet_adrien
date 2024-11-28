@@ -1,0 +1,20 @@
+# Utilise une image Node.js
+FROM node:18
+
+# Définit le répertoire de travail
+WORKDIR /app
+
+# Copie les fichiers package.json et package-lock.json
+COPY package*.json ./
+
+# Installe les dépendances
+RUN npm install
+
+# Copie tout le reste du code source
+COPY . .
+
+# Expose le port 3000 (correspond au port configuré dans Vite)
+EXPOSE 3000
+
+# Commande pour démarrer Vite
+CMD ["npm", "run", "dev"]
