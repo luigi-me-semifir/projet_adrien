@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const SearchBar = () => {
+const Search = () => {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
@@ -44,4 +44,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default Search;
